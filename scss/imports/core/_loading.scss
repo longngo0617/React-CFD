@@ -1,0 +1,35 @@
+@keyframes anim{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes rotate{
+    to{ transform: rotate(1turn);}
+}
+@keyframes line-1{
+    from {
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(150%);
+    }
+}
+@keyframes line-2{
+    from {
+        transform: translateY(-50%);
+    }
+    to{
+        transform: translateY(210%);
+    }
+}
+@keyframes arrow{
+    from {
+        bottom: 0;
+    }
+    to{
+        bottom: -10px;
+    }
+}

@@ -1,0 +1,70 @@
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: $color-bg;
+    position: relative;
+    height: 100vh;
+    padding:4rem;
+    .title{
+        position: relative;
+        height: 100%;
+        .main-text{
+            font-size:5.8rem;
+            font-family: 'SaolDisplay';
+            line-height: 1;
+            letter-spacing: 0;
+            color:#fff;
+            position: absolute;
+            left:0;
+            top:50%;
+            transform:translateY(-50%);
+            mix-blend-mode: difference;
+            z-index: 2;
+            span {
+                display: block;
+                text-transform: uppercase;
+                &:first-child{
+                    text-indent: 20%;
+                }
+                &:nth-child(2){
+                    text-indent: 40%;
+                }
+                &:nth-child(3){
+                    text-indent: 24%;
+                }
+                @include media('<=phone'){
+                    &:first-child,&:nth-child(2),&:nth-child(3){
+                        text-indent: 0;
+                    }
+                }
+            }
+            @include media('<=phone'){
+                font-size: 54px;
+                max-width: 330px;
+                left:-.8em;
+                top:35%;
+            }
+        }
+        .main-image{
+            position: absolute;
+            width: 340px;
+            bottom: auto;
+            top: calc(50vh - 15rem);
+            right: 170px;
+            @include media('<=phone'){
+                width: 215px;
+                top:50vh;
+                right:-3rem;
+            }
+        }
+    }
+    .copy-right{
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        @include media('<=phone'){
+            bottom: 20px;
+            left:20px;
+        }
+    }
+}
