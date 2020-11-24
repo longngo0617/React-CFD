@@ -1,0 +1,47 @@
+.btn {
+    color:$black;
+    height: 100%;
+    padding:0 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+}
+.btn-round {
+    color:white;
+    background-color: #49c5b6;
+    border-radius: 100px;
+    display: inline-flex;
+    height: 46px;
+    padding:0 36px;
+}
+.btn-register {
+    background-color: #49c5b6;
+    color:$white;
+}
+.button {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top:50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 10;
+    &__left {
+        left:-105px;
+        background-image: url(/img/arrow.svg);
+        background-repeat: no-repeat;
+        background-size: 22px;
+        background-position: center;
+    }
+    &__right {
+        right:-105px;
+        background-image: url(/img/next.svg);
+        background-repeat: no-repeat;
+        background-size: 22px;
+        background-position: center;
+    }
+}

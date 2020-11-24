@@ -1,0 +1,97 @@
+.footer {
+    padding:57px 0 0;
+    .top{
+        padding-bottom: 60px;
+    }
+    &__left {
+        &--des {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 31px;
+            margin-bottom: 40px;
+        }
+        &--address {
+            p{
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+        &--social {
+            margin-top: 20px;
+            display: flex;
+            .icon {
+                background-color: $black;
+                height: 30px;
+                margin-right: 20px;
+                &.fb {
+                    width: 22px;
+                    -webkit-mask: url(/img/facebook-app-symbol.svg) no-repeat left center;
+                    mask: url(/img/facebook-app-symbol.svg) no-repeat left center;
+                    transition: all 0.4s;
+                    -webkit-transition: all 0.4s;
+                }
+                &.mail {
+                    width: 26px;
+                    -webkit-mask: url(/img/mail.svg) no-repeat left center;
+                    mask: url(/img/mail.svg) no-repeat left center;
+                    transition: all 0.4s;
+                    -webkit-transition: all 0.4s;
+                }
+                &.skype {
+                    width: 24px;
+                    -webkit-mask: url(/img/skype.svg) no-repeat left center;
+                    mask: url(/img/skype.svg) no-repeat left center;
+                    transition: all 0.4s;
+                    -webkit-transition: all 0.4s;
+                }
+            }
+            
+        }
+    }
+    &__right {
+        position: relative;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            li{
+                a{
+                    color:$black;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .back-top {
+            position: absolute;
+            right: -25%;
+            top: 60%;
+            transform: rotateZ(90deg);
+            color:$black;
+            display: flex;
+            align-items: center;
+            letter-spacing: 6px;
+            font-size: 10px;
+            text-transform: uppercase;
+            span {
+                background-color: $black;
+                width: 150px;
+                height: 1px;
+                margin-right: 10px;
+                display: block;
+            }
+        }
+    }
+    .bottom {
+        margin-top: 20px;
+        padding:20px 0;
+        border-top: 1px solid #e6eaea;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color:#7e7e7e;
+            font-size: 14px;
+        }
+    }
+}

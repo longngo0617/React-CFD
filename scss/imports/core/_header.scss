@@ -1,0 +1,52 @@
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #f3f7f6;
+    position: relative;
+    .container-fluid {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        height:100%;
+        padding:0;
+        .menu {
+            display: flex;
+            align-items: center;
+            padding:0 15px;
+            border-right: 1px solid #e0e0e0;
+            height: 100%;
+            .burger {
+                width: 24px;
+                height: 14px;
+                position: relative;
+                margin-right: 10px;
+                span {
+                    width: 100%;                 
+                    height: 2px;
+                    background:$black;
+                    display: block;
+                    border-radius: 10px;
+                    &:not(:last-child){
+                        margin-bottom: 4px;
+                    }
+                }
+            }
+            .text {
+                text-transform: uppercase;
+            }
+        }
+        .logo {
+            position: absolute;
+            left:50%;
+            transform:translateX(-50%);
+            img{
+                width: 70px;
+            }
+        }
+        .user {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

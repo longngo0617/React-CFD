@@ -18,47 +18,5 @@ body {
     overscroll-behavior: none;
     margin: 0;
     user-select: none;
-}
-.container {
-    width: 1560px;
-    min-width: 1560px;
-    margin: 0 auto;
-    height: 100%;
-    @include media("<=1560px") {
-      width: 1280px;
-      min-width: 1280px;
-    }
-    @include media("<=desktop") {
-      width: 1080px;
-      min-width: 1080px;
-    }
-    @include media("<=1080px") {
-      width: 100%;
-      min-width: 100%;
-    }
-    .row {
-      display: flex;
-      height: 100%;
-      padding: 0 32px;
-      @include media("<=phone") {
-        padding: 0 16px;
-      }
-    }
-    .v-center {
-      align-items: center;
-    }
-    .space-between {
-      justify-content: space-between;
-    }
-  }
-  .container-fluid {
-    width: 100%;
-    height: 100%;
-    .row {
-      display: flex;
-      height: 100%;
-    }
-  }
-.mt-0{
-  margin-top:0 !important;
+    background-color: #f4f7f6;
 }
