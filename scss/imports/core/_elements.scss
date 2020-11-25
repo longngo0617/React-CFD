@@ -20,6 +20,22 @@
     background-color: #49c5b6;
     color:$white;
 }
+.btn-save {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 40px;
+}
+.btn-continue{
+    background-color: $white;
+    color:$black;
+    border-radius: 100px;
+    border:1px solid $black;
+    font-weight: normal;
+}
 .button {
     width: 56px;
     height: 56px;

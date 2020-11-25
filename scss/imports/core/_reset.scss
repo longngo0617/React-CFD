@@ -52,6 +52,7 @@ button{
 a{
 	cursor: pointer;
 	text-decoration: none;
+	display: block;
 	&:focus{
 		outline:none;
 		border:none;

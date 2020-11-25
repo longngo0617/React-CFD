@@ -1,0 +1,155 @@
+.information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 80px;
+    .avatar {
+        border-radius: 100%;
+        width: 185px;
+        height: 185px;
+        overflow: hidden;
+        cursor: pointer;
+        border: 4px solid #cacaca;
+    }
+    .name {
+        margin: 21px 0 5px;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 34px;
+    }
+    .member {
+        font-size: 16px;
+        color: #838383;
+    }
+}
+.tab {
+    width: 100%;
+    display: flex;
+    &__title {
+        flex: 0.5;
+        a{
+            white-space: nowrap;
+            font-size: 16px;
+            color:$black;
+            text-transform: uppercase;
+            font-weight: 400;
+            border: 1px solid #c4c4c4;
+            padding: 0 20px;
+            margin-bottom: -1px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            &.js-tab-active {
+                font-weight: 700;
+                background-color: $white;
+            }
+        }
+    }
+    &__content {
+        flex:1;
+        margin-left: 30px;
+        &-1 {
+            background-color: $white;
+            padding:50px 0 0;
+            .field {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                padding:0 50px;
+                label {
+                    font-weight: bold;
+                    font-size: 16px;
+                    width: 170px;
+                }
+                input {
+                    flex: 1;
+                    height: 58px;
+                    font-size: 16px;
+                    padding: 20px;
+                    outline: none;
+                    border: 1px solid #dbe0df;
+                    &:disabled {
+                        background-color: #eee;
+                    }
+                }
+            }
+        }
+        &-2 {
+            .course{
+                display: flex;
+                align-items: center;
+                height: 280px;
+                margin-bottom: 23px;
+                &__image{
+                    max-width: 330px;
+                    min-width: 250px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                &__info{
+                    background-color: $white;
+                    flex:1;
+                    padding:25px;
+                    min-width: 340px;
+                    height: 100%;
+                    text-align: left;
+                    &--name {
+                        font-weight: bold;
+                        font-size: 22px;
+                        text-transform: uppercase;
+                        color: $black;
+                        margin-bottom: 15px;
+                    }
+                    &--date {
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #838383;
+                        margin-bottom: 30px;
+                    }
+                    &--details {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 15px;
+                        .item {
+                            display: flex;
+                            align-items: center;
+                            span {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                    .progress{
+                        display: flex;
+                        align-items: center;
+                        font-size: 16px;
+                        margin-bottom: 35px;
+                        .line{
+                            flex: 1;
+                            background: #e6eaea;
+                            height: 6px;
+                            border-radius: 100px;
+                            position: relative;
+                            margin-right: 15px;
+                            position: relative;  
+                            &::after{
+                                position: absolute;
+                                content:'';
+                                background-color: #49c5b6;
+                                width: 30%;
+                                height: 100%;
+                                border-radius: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
