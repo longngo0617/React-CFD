@@ -42,8 +42,13 @@
             height: 60px;
             display: flex;
             align-items: center;
+            transition: background-color .3s;
             &.js-tab-active {
+                background-color: $white;
                 font-weight: 700;
+            }
+            &:hover {
+
                 background-color: $white;
             }
         }
@@ -148,6 +153,99 @@
                             }
                         }
                     }
+                }
+            }
+        }
+        &-3 {
+            .list__project {
+                display: flex;
+                align-items: center;
+                margin-bottom: 65px;
+                .project {
+                    max-width: 380px;
+                    &:not(:last-child){
+                        margin-right: 30px;
+                    }
+                    &__image {
+                        max-width: 100%;
+                        max-height: 272px;
+                        object-fit: cover;
+                    }
+                    &__info {
+                        background-color: $white;
+                        &--top {
+                            padding:18px;
+                        }
+                        &--title {
+                            font-weight: bold;
+                            font-size: 22px;    
+                            font-weight: 700;
+                        }
+                        &--des {
+                            padding:10px 0 30px;
+                            font-size: 16px;
+                            color:#838383;
+                        }
+                        &--details {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            border-top: 1px solid #e7e7e7;
+                            .teacher{
+                                display: flex;
+                                align-items: center;
+                                padding:15px 20px;
+                                .avatar{
+                                    border-radius: 100px;
+                                    overflow: hidden;
+                                    max-width: 100%;
+                                    width: 36px;
+                                    min-width: 30px;
+                                }
+                                .name{
+                                    margin-left: 10px;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                }
+                            }
+                            .btn-register{
+                                padding:25px;
+                                border-left:1px solid #e7e7e7;
+                                background-color: transparent;
+                                color:#49c5b6;
+                            }
+                        }
+                    }
+                }
+            }
+            .upload {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &-4 {
+            .payment__table {
+                display: flex;
+                flex-direction: column;
+            }
+            .payment__row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: $white;
+                padding:30px;
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+                .name {
+                    font-weight: bold;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                }
+                .date,.price {
+                    font-size: 16px;
+                    font-weight: 400;
                 }
             }
         }

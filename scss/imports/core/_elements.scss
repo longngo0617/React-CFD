@@ -29,6 +29,18 @@
     font-weight: 700;
     margin-top: 40px;
 }
+.btn-upload {
+    background-color: #f4f7f6;
+    border-radius: 100px;
+    display: flex;
+    height: 46px;
+    padding:0 36px;
+    color:$black;
+    border:1px solid $black;
+    img{
+        margin-right: 7px;
+    }
+}
 .btn-continue{
     background-color: $white;
     color:$black;
