@@ -81,7 +81,7 @@
                 }
             }
             &-info {
-                background-color: $white;
+                background-color: #ececec;
             }
             &-wrap {
                 padding:10px;
@@ -97,6 +97,8 @@
                 color:#838383;
                 font-size: 16px;
                 line-height: 22px;
+                height: 70px;
+                max-height: 80px;
             }
             &-details {
                 display: flex;
@@ -200,6 +202,12 @@
                 padding-bottom: 40px;
             }
         }
+    }
+}
+.related {
+    background-color: $black;
+    .title,.type{
+        color:$white;
     }
 }
 .comment {

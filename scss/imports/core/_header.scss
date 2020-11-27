@@ -2,8 +2,9 @@ header {
     height: 60px;
     width: 100%;
     background-color: #f3f7f6;
-    position: relative;
+    position: fixed;
     border-bottom: 1px solid #e0e0e0;
+    z-index: 100;
     .container-fluid {
         display:flex;
         align-items: center;
@@ -16,6 +17,7 @@ header {
             padding:0 15px;
             border-right: 1px solid #e0e0e0;
             height: 100%;
+            cursor: pointer;
             .burger {
                 width: 24px;
                 height: 14px;
@@ -27,6 +29,8 @@ header {
                     background:$black;
                     display: block;
                     border-radius: 10px;
+                    transition: all 0.4s;
+                    -webkit-transition: all 0.4s;
                     &:not(:last-child){
                         margin-bottom: 4px;
                     }

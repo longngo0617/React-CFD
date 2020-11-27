@@ -15,10 +15,18 @@
     display: inline-flex;
     height: 46px;
     padding:0 36px;
+    transition:background .3s;
+    &:hover{
+        background-color: #00827f;
+    }
 }
 .btn-register {
     background-color: #49c5b6;
     color:$white;
+    transition:background .3s;
+    &:hover{
+        background-color: #00827f;
+    }
 }
 .btn-save {
     height: 60px;
@@ -48,6 +56,13 @@
     border:1px solid $black;
     font-weight: normal;
 }
+.btn-share {
+    img {
+        width: 22px;
+        height: 22px;
+    }
+    height: 46px;
+}
 .button {
     width: 56px;
     height: 56px;
@@ -72,4 +87,39 @@
         background-size: 22px;
         background-position: center;
     }
+}
+.menu-is-show {
+    header {
+        .burger{
+            span{
+                &:first-child{
+                    transform: rotateZ(45deg) translate(4px, 3px);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                    transform: scale(0);
+                    -webkit-transform: scale(0)
+                }
+                &:last-child{
+                    transform: rotateZ(-45deg) translate(5px, -5px);
+                }
+            }
+        }
+    }
+    nav{
+        transform: translate(0%, 0%);
+        -webkit-transform: translate(0%, 0%);
+        -o-transform: translate(0%, 0%);
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+    }
+    .overlay_nav{
+        opacity: 0.85;
+        visibility: visible;
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+    }
+}
+main{
+    transition: margin-left .5s;
 }

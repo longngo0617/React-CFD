@@ -1,0 +1,57 @@
+.nav{
+    position: absolute;
+    width: 320px;
+    height: 100vh;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    background: #f4f7f6;
+    z-index: 91;
+    transform: translate(-100%, 0%);
+    -webkit-transform: translate(-100%, 0%);
+    -o-transform: translate(-100%, 0%);
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    ul{
+        height:100%;
+        li{
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            a{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                text-transform: capitalize;
+                white-space: nowrap;
+                padding: 25px 35px;
+                justify-content: flex-start;
+                border-bottom: 1px solid #e0e0e0;
+                transition: all 0.4s;
+                -webkit-transition: all 0.4s;
+                color:$black;
+                font-weight:bold;
+            }
+            &:hover {
+                a{
+                    background-color: #e0e0e0;
+                }
+            }
+        }
+    }
+}
+.overlay_nav {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute; 
+    background: #000;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 90;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+}

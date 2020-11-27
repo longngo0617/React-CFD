@@ -29,6 +29,30 @@ const  clickTab = () => {
         });
     });
 };
+const clickMenu = () => {
+    const btnMenu = document.querySelector('.menu');
+    const body = document.getElementsByTagName('body')[0];
+    btnMenu.addEventListener('click', (e)=>{
+        e.stopPropagation();
+        body.classList.toggle('menu-is-show');
+        if(body.classList.contains('menu-is-show'))
+        {
+            document.getElementsByTagName('main')[0].style.marginLeft = "250px";
+        }
+        else{
+            document.getElementsByTagName('main')[0].style.marginLeft = "0";
+        }   
+    });
+    body.addEventListener('click', ()=>{
+        if(body.classList.contains('menu-is-show'))
+        {
+            body.classList.remove('menu-is-show');
+        }
+    });
+}
+
+clickMenu();
 clickTab();
+
 
 
