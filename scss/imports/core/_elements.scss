@@ -20,6 +20,12 @@
         background-color: #00827f;
     }
 }
+.btn-signin {
+    transition: background .3s;
+    &:hover{
+        background-color: #e0e0e0;
+    }
+}
 .btn-register {
     background-color: #49c5b6;
     color:$white;
@@ -122,4 +128,97 @@
 }
 main{
     transition: margin-left .5s;
+}
+.popup-signin{
+    position: fixed;
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    z-index: 1000;
+    .wrap {
+        width: 560px;
+        background: #f4f7f6;
+        padding: 50px 70px;
+        position: relative;
+        .title {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 31px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        input {
+            flex: 1;
+            height: 58px;
+            font-size: 16px;
+            padding: 0 20px;
+            width: 100%;
+            margin-bottom: 15px;
+            outline: none;
+            border: 1px solid #dbe0df;
+        }
+        .remember{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+            .forget{
+                white-space: nowrap;
+                color: #00afab;
+                transition: all 0.4s;
+                -webkit-transition: all 0.4s;
+            }
+        }
+        .btn-remember{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            cursor: pointer;
+            input {
+                width: auto;
+                appearance: auto;
+                height: auto;
+                margin: 0 10px 5px 0;
+                position: relative;
+                bottom: -1px;
+            }
+        }
+        .btn-login {
+            height: 54px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:20px;
+        }
+        .text-register {
+            margin:30px 0 15px 0;
+        }
+        .btn-google {
+            background-color: #fff;
+            color:$black;
+            text-transform: capitalize;
+            img{
+                width: 20px;
+                height: 20px;
+                margin:0;
+                margin-right: 10px;
+            }
+        }
+        .close{
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            padding: 20px;
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+        }
+    }
 }

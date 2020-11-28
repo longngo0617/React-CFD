@@ -1,5 +1,5 @@
 .nav{
-    position: absolute;
+    position: fixed;
     width: 320px;
     height: 100vh;
     top: 60px;
@@ -47,7 +47,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    position: absolute; 
+    position: fixed; 
     background: #000;
     opacity: 0;
     visibility: hidden;
