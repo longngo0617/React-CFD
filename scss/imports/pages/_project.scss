@@ -1,0 +1,28 @@
+.project {
+    .course{
+        .type {
+            margin-bottom: 0;
+        }
+    }
+    &__wrap {
+        margin-top: 50px;
+    }
+    &__item {
+        max-width: 585px;
+        margin-bottom: 30px;
+        .text {
+            background-color: $black;
+            padding: 30px 45px;
+            .name {
+                color:$white;
+                font-size: 28px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            .owner {
+                color : #7f7f7f;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.register {
+    .course{
+        margin-top: 40px;
+        .type {
+            text-transform: capitalize;
+        }
+    }
+    &__wrap {
+        max-width: 790px;
+        background-color: $white;
+        margin: 0 auto ;
+        .welcome {
+            padding:50px 50px 0;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+        p{
+            padding:0 50px 0;
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+    &__form {
+        padding :50px;
+        position: relative;
+        .field {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            label{
+                width: 180px;
+                font-weight: bold;
+                span{
+                    color:#00afab;
+                }
+            }
+            input{
+                flex:1;
+                height: 58px;
+                padding: 0 20px;
+                outline: none;
+                border: 1px solid #dbe0df;
+                font-size: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.payment {
+    &__item {
+        max-width: 790px;
+        margin: 0 auto 30px;
+        &--wrap {
+            padding:50px;
+            background-color: $white;
+            .title {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 28px;
+                padding-bottom:10px;
+                margin-bottom: 20px;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    bottom:0;
+                    left:0;
+                    background-color: $black;
+                    width: 60px;
+                    height: 3px;
+                    content:'';
+                }
+            }
+            .details {
+                .sub__title {
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
+                .card,.tt {
+                    font-size: 16px;
+                    line-height: 26px;
+                    margin-bottom: 10px;
+                }
+                ul {
+                    li{
+                        line-height: 26px;
+                        strong{
+                            font-weight: bold;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+                p{
+                    margin: 15px 0;
+                    font-style: italic;
+                    font-family: "SVN-Avo";
+                }
+            }
+        }
+    }
+}

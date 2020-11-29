@@ -1,0 +1,41 @@
+.coreteam {
+    .course {
+       .type {
+        margin-bottom: 5px;
+       }
+       .title {
+           max-width: 790px;
+           text-align: center;
+           margin: 0 auto;
+       }
+    }
+    &__teacher{
+        margin-top: 70px;
+    }
+    &__teacher,&__student {
+        &--item {
+            margin-bottom: 30px;
+            .wrap {
+                max-width: 585px;
+                max-height: 385px;
+                object-fit: cover;
+            }
+            .text {
+                padding:30px;
+                background-color: $white;
+                .name {
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 47px;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                }
+                .job,.class {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color:#7f7f7f;
+                }
+            }
+        }
+    }
+}
